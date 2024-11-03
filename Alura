@@ -25,7 +25,9 @@ index.html
 <body>
     <header>ScorpionFlix</header>
 
-   <section>
+    <section class="chamada">
+        <div class="chamada-texto">
+
 
     <div class="container">
         <div>
@@ -46,16 +48,44 @@ index.html
 
 <!-- código omitido -->
 
-<section>
-    <h2>More videos</h2>
-    <div>
-        <a href="https://www.youtube.com/watch?v=lTRiuFIWV54">
-            <img src="https://youtu.be/lTRiuFIWV54?si=vUC1RKwp7rghmmfu" />
-        </a>
-    </div>
-  </section>
-  
-  <!-- código omitido -->
+<section class="categoria">
+  <h2>More videos</h2>
+    <div class="categoria-videos">
+    <a href="https://www.youtube.com/watch?v=lTRiuFIWV54">
+      <img src="https://img.youtube.com/vi/lTRiuFIWV54/maxresdefault.jpg" />
+    </a>
+    <a href="https://www.youtube.com/watch?v=FxJ3zPUU6Y4">
+      <img src="https://img.youtube.com/vi/FxJ3zPUU6Y4/maxresdefault.jpg" />
+    </a>
+    <a href="https://www.youtube.com/watch?v=XFdTycvQMQo">
+      <img src="https://img.youtube.com/vi/XFdTycvQMQo/maxresdefault.jpg" />
+    </a>
+    <a href="https://www.youtube.com/watch?v=r7XB4oEpfWw">
+      <img src="https://img.youtube.com/vi/r7XB4oEpfWw/maxresdefault.jpg" />
+    </a>
+    
+
+  </div>
+</section>
+
+<section class="categoria">
+      <div class="categoria-videos">
+        <a href="https://www.youtube.com/watch?v=MVeeRCRw5kM">
+            <img src="https://img.youtube.com/vi/MVeeRCRw5kM/maxresdefault.jpg" />
+          </a>
+          <a href="https://www.youtube.com/watch?v=AzP6YmaQNdI">
+            <img src="https://img.youtube.com/vi/AzP6YmaQNdI/maxresdefault.jpg" />
+          </a>
+          <a href="https://www.youtube.com/watch?v=u2j_5v6w6ws">
+            <img src="https://img.youtube.com/vi/u2j_5v6w6ws/maxresdefault.jpg" />
+          </a>
+          <a href="https://www.youtube.com/watch?v=Vg13S-zzol0">
+            <img src="https://img.youtube.com/vi/Vg13S-zzol0/maxresdefault.jpg" />
+          </a>
+
+        </div>
+    </section>
+
 
 
 styles.css
@@ -75,7 +105,7 @@ header {
     color: rgb(197, 42, 228);
 }
 
-section {
+.chamada {
     background: rgb(73, 17, 136);
     padding-bottom: 80px;
     padding-top: 80px;
@@ -96,3 +126,25 @@ section {
 .container h1 {
     font-size: 48px;
 }
+
+img {
+    height: 200px;
+  }
+
+
+  .categoria-videos {
+    display: flex;
+  }
+  
+  .chamadan {
+    background: rgb(73, 17, 136);
+    padding-bottom: 80px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .chamada {
+    padding-left: 20px;
+    padding-right: 200px;
+  }
