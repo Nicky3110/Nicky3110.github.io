@@ -1,4 +1,4 @@
-index.hmtl
+index.html
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +13,12 @@ index.hmtl
 
 <head>
     <link rel="stylesheet"  href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+
+
+
     <tittle>ScorpionFlix</tittle>
 </head>
 
@@ -21,14 +27,15 @@ index.hmtl
 
    <section>
 
-    <div>
-    <h1>Symphony and Lofi</h1>
-    <p>#músic/</p>
-    </div>
-
-    <div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/U6lwOy6EdIA?si=dayGqYp-1EynH-n7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+    <div class="container">
+        <div>
+            <h1>Symphony and Lofi</h1>
+            <p>#music #study #relax</p>
+        </div>
+    
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/U6lwOy6EdIA?si=dayGqYp-1EynH-n7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </div>
   </section>
 
@@ -37,19 +44,55 @@ index.hmtl
 
 </html>
 
+<!-- código omitido -->
 
-style.css
+<section>
+    <h2>More videos</h2>
+    <div>
+        <a href="https://www.youtube.com/watch?v=lTRiuFIWV54">
+            <img src="https://youtu.be/lTRiuFIWV54?si=vUC1RKwp7rghmmfu" />
+        </a>
+    </div>
+  </section>
+  
+  <!-- código omitido -->
+
+
+styles.css
 
 body {
-    color: white;
+    color: rgb(13, 168, 246);
     background: rgb(25, 6, 43);
-    margin: 0px;
+    margin:0px;
+    font-family: "Playwrite GB S", cursive;
 }
 
 
 header {
     border-bottom: solid 2px rgb(42, 122, 228);
-    padding: 32px;
+    padding: 3px;
     font-size: 50px;
     color: rgb(197, 42, 228);
+}
+
+section {
+    background: rgb(73, 17, 136);
+    padding-bottom: 80px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.chamada-texto {
+    margin-right: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+
+.container h1 {
+    font-size: 48px;
 }
