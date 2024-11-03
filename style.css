@@ -1,0 +1,58 @@
+body {
+    color: rgb(13, 168, 246);
+    background: rgb(25, 6, 43);
+    margin:0px;
+    font-family: "Playwrite GB S", cursive;
+}
+
+
+header {
+    border-bottom: solid 2px rgb(42, 122, 228);
+    padding: 3px;
+    font-size: 50px;
+    color: rgb(197, 42, 228);
+}
+
+.chamada {
+    background: argb(73, 17, 136);
+    padding-bottom: 80px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.chamada-texto {
+    margin-right: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+
+.container h1 {
+    font-size: 48px;
+}
+
+img {
+    height: 200px;
+  }
+
+
+  .categoria-videos {
+    display: flex;
+  }
+  
+  .chamadan {
+    background: rgb(73, 17, 136);
+    padding-bottom: 80px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .chamada {
+    padding-left: 20px;
+    padding-right: 200px;
+  }
